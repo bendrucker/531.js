@@ -25,4 +25,18 @@ describe('531 cycle', function () {
     .to.have.property('weight', 235);
   });
 
+  it('can change the rounding increment', function () {
+    expect(fto(400, {
+      increment: 10
+    })[0].sets[0])
+    .to.have.property('weight', 230);
+  });
+
+  it('can skip using the 90% max', function () {
+    expect(fto(400, {
+      use90: false
+    })[0].sets[0])
+    .to.have.property('weight', 260);
+  });
+
 });

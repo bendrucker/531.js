@@ -5,12 +5,16 @@ var extend  = require('xtend');
 var program = require('./program.json');
 
 module.exports = function (max, options) {
-  max = max * 0.9;
-  options = options || {};
+  options = extend({}, {
+    round: 'down',
+    increment: 5,
+    use90: true
+  }, options);
+  if (options.use90) max = max * 0.9;
   function set (spec) {
     return extend(spec, {
-      weight: round(spec.ratio * max, 5, {
-        direction: typeof options.round === 'undefined' ? 'down' : options.round
+      weight: round(spec.ratio * max, options.increment, {
+        direction: options.round
       })
     });
   }
