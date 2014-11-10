@@ -1,6 +1,6 @@
 {
   "name": "531",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Given a 1RM, generate a 4 week 5/3/1 cycle",
   "main": "./src",
   "scripts": {
