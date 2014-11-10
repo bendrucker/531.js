@@ -4,11 +4,14 @@ var round   = require('round');
 var extend  = require('xtend');
 var program = require('./program.json');
 
-module.exports = function (max) {
+module.exports = function (max, options) {
   max = max * 0.9;
+  options = options || {};
   function set (spec) {
     return extend(spec, {
-      weight: round.down(spec.ratio * max, 5)
+      weight: round(spec.ratio * max, 5, {
+        direction: typeof options.round === 'undefined' ? 'down' : options.round
+      })
     });
   }
   return program.weeks.map(function (week, index) {
