@@ -15,6 +15,18 @@
   "bugs": {
     "url": "https://github.com/bendrucker/531.js/issues"
   },
-  "keywords": ["531", "weightlifting"],
-  "homepage": "https://github.com/bendrucker/531.js"
+  "keywords": [
+    "531",
+    "weightlifting"
+  ],
+  "homepage": "https://github.com/bendrucker/531.js",
+  "dependencies": {
+    "round": "~1.0.0",
+    "xtend": "~4.0.0"
+  },
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "istanbul": "~0.3.2",
+    "mocha": "~2.0.1"
+  }
 }
