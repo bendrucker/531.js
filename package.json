@@ -1,0 +1,20 @@
+{
+  "name": "531",
+  "version": "1.0.0",
+  "description": "Given a 1RM, generate a 4 week 5/3/1 cycle",
+  "main": "./src",
+  "scripts": {
+    "test": "istanbul cover _mocha -- ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bendrucker/531.js.git"
+  },
+  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendrucker/531.js/issues"
+  },
+  "keywords": ["531", "weightlifting"],
+  "homepage": "https://github.com/bendrucker/531.js"
+}
