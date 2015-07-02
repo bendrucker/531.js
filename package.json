@@ -2,9 +2,9 @@
   "name": "531",
   "version": "1.0.1",
   "description": "Given a 1RM, generate a 4 week 5/3/1 cycle",
-  "main": "./src",
+  "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha -- ./test"
+    "test": "standard && tape test.js"
   },
   "repository": {
     "type": "git",
@@ -21,12 +21,16 @@
   ],
   "homepage": "https://github.com/bendrucker/531.js",
   "dependencies": {
-    "round": "~1.0.0",
+    "ap": "~0.2.0",
+    "round": "~2.0.0",
     "xtend": "~4.0.0"
   },
   "devDependencies": {
-    "chai": "~1.10.0",
-    "istanbul": "~0.3.2",
-    "mocha": "~2.0.1"
-  }
+    "standard": "~4.5.2",
+    "tape": "~4.0.0"
+  },
+  "files": [
+    "index.js",
+    "program.json"
+  ]
 }

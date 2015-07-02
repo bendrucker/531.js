@@ -1,40 +1,88 @@
-531.js
+531.js [![Build Status](https://travis-ci.org/bendrucker/531.js.svg?branch=master)](https://travis-ci.org/bendrucker/531.js)
 ======
 
-Given a 1RM, generate a 4 week 5/3/1 cycle. 
+> Given a one rep max, generate a 4 week 5/3/1 cycle.
 
-## Setup
-```bash
-$ npm install 531
+## Install
+
+```sh
+npm install --save 531
+```
+
+## Usage
+
+```js
+var fto = require('531')
+var cycle = fto(455)
+
+// first week, first set weight:
+// => cycle[0][0].weight
 ```
 
 ## API
 
-#### `fto(max, [options])` -> `Array`
+#### `fto(max, [options])` -> `array`
 
-Given a `max` (Number), generates an array of weeks. Each week has:
-
-* `name`: The name of the week, e.g. "Week 1"
-* `sets`: An `Array` of sets
+Returns an array (of length 4) of set arrays (each of length 3).
 
 Each set has:
 
-* `ratio`: (Number) The ratio of the 90% 1RM to use for that set
-* `repetitions`: (Number) The number of repetitions to perform
-* `weight`: (Number) The total weight to use
-* `max`: (Boolean) Whether that set should be performed for the maximum number of sets possible
+###### ratio
 
-`options` may contain:
+Type: `number`
 
-* `round`: Defaults to `'down'`. Set to `'up'` to round up to the nearest increment
-* `increment`: Defaults to `5`. Sets the increment to use when rounding weights.
-* `use90`: Defaults to `true`. Set to `false` to use 100% of your 1RM for calculations.
+The ratio of the 90% 1RM to use for that set.
 
-## Example
+###### repetitions
 
-```js
-var fto   = require('531');
-var cycle = fto(455);
+Type: `number`
 
-console.log('Next cycle, my first deadlift will be:', cycle[0].sets[0].weight, 'lbs');
-```
+The number of repetitions to perform.
+
+###### weight
+
+Type: `number`
+
+The total weight to use (unitless).
+
+##### max
+
+Type: `boolean`
+
+Whether that set should be performed for the maximum number of sets possible.
+
+---
+
+##### max
+
+*Required*  
+Type: `number`
+
+Your estimated one rep max to use.
+
+##### options
+
+###### round
+
+Type: `string`  
+Default: `'down'`
+
+The direction to round weights to.
+
+###### increment
+
+Type: `number`  
+Default: `5`
+
+The increment to use when rounding weights.
+
+###### use90
+
+Type: `boolean`  
+Default: `true`
+
+Set to `false` to use 100% of your estimated one rep max for calculations instead of the recommended 90%.
+
+## License
+
+MIT © [Ben Drucker](http://bendrucker.me)

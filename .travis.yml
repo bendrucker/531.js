@@ -1,12 +1,3 @@
 language: node_js
 node_js:
-- '0.10'
-deploy:
-  provider: npm
-  email: bvdrucker@gmail.com
-  api_key:
-    secure: YK7GRgwLjohsxth5/3//s3hjD2SKfBUxjVguzpGONEJLYZy7qZqYfOBsXxgIZ/v1MqnrT83I+N3+g3InQDRE4Xd1JPIOmc/qhHwPfni1J4M5EYSmZZCwE6DQ8pyUc9MeP55tcdWD50/JY3X+Lux3k8YJeOFaIMqGjC+kDzZ3fhM=
-  on:
-    tags: true
-    all_branches: true
-    repo: bendrucker/531.js
+- iojs
