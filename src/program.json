@@ -1,71 +1,61 @@
-{
-  "weeks": [
+[
+  [
     {
-      "sets": [
-        {
-          "ratio": 0.65,
-          "repetitions": 5
-        },
-        {
-          "ratio": 0.75,
-          "repetitions": 5
-        },
-        {
-          "ratio": 0.85,
-          "repetitions": 5,
-          "max": true
-        }
-      ]
+      "ratio": 0.65,
+      "repetitions": 5
     },
     {
-      "sets": [
-        {
-          "ratio": 0.70,
-          "repetitions": 3
-        },
-        {
-          "ratio": 0.80,
-          "repetitions": 3
-        },
-        {
-          "ratio": 0.90,
-          "repetitions": 3,
-          "max": true
-        }
-      ]
+      "ratio": 0.75,
+      "repetitions": 5
     },
     {
-      "sets": [
-        {
-          "ratio": 0.75,
-          "repetitions": 5
-        },
-        {
-          "ratio": 0.85,
-          "repetitions": 3
-        },
-        {
-          "ratio": 0.95,
-          "repetitions": 1,
-          "max": true
-        }
-      ]
+      "ratio": 0.85,
+      "repetitions": 5,
+      "max": true
+    }
+  ],
+  [
+    {
+      "ratio": 0.70,
+      "repetitions": 3
     },
     {
-      "sets": [
-        {
-          "ratio": 0.40,
-          "repetitions": 5
-        },
-        {
-          "ratio": 0.50,
-          "repetitions": 5
-        },
-        {
-          "ratio": 0.60,
-          "repetitions": 5
-        }
-      ]
+      "ratio": 0.80,
+      "repetitions": 3
+    },
+    {
+      "ratio": 0.90,
+      "repetitions": 3,
+      "max": true
+    }
+  ],
+  [
+    {
+      "ratio": 0.75,
+      "repetitions": 5
+    },
+    {
+      "ratio": 0.85,
+      "repetitions": 3
+    },
+    {
+      "ratio": 0.95,
+      "repetitions": 1,
+      "max": true
+    }
+  ],
+  [
+    {
+      "ratio": 0.40,
+      "repetitions": 5
+    },
+    {
+      "ratio": 0.50,
+      "repetitions": 5
+    },
+    {
+      "ratio": 0.60,
+      "repetitions": 5
     }
   ]
-}
+]
