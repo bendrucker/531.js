@@ -1,4 +1,4 @@
-531.js [![Build Status](https://travis-ci.org/bendrucker/531.js.svg?branch=master)](https://travis-ci.org/bendrucker/531.js)
+531.js [![Build Status](https://travis-ci.org/bendrucker/531.js.svg?branch=master)](https://travis-ci.org/bendrucker/531.js) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/531.js.svg)](https://greenkeeper.io/)
 ======
 
 > Given a one rep max, generate a 4 week 5/3/1 cycle.
